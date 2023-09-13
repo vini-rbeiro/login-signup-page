@@ -15,11 +15,21 @@
   <body>
     <div class="wrapper">
       <form action="">
-        <h1>Login</h1>
+        <div class="horizontal-align">
+          <h1>Login</h1>
+          <h2>SUIC</h2>
+        </div>
 
         <div class="spacing">
           <div class="input-group">
-            <input type="text" name="user" id="user" placeholder="Usuário" />
+            <input
+              type="text"
+              name="user"
+              id="user"
+              placeholder="Usuário"
+              minlength="3"
+              required
+            />
             <i class="bx bxs-user"></i>
           </div>
 
@@ -29,6 +39,8 @@
               name="password"
               id="password"
               placeholder="Senha"
+              minlength="8"
+              required
             />
             <i class="bx bxs-lock-alt"></i>
           </div>

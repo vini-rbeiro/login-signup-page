@@ -1,8 +1,9 @@
 :root {
   --font-family: "Roboto", sans-serif;
+  --font-logo: "Righteous";
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400&display=swap");
 
 * {
   margin: 0;
@@ -42,9 +43,27 @@ form {
   width: 100%;
 }
 
+.horizontal-align {
+  width: 97%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .wrapper h1 {
   font-size: 2.6em;
   letter-spacing: 1px;
+}
+
+.wrapper h2 {
+  font-size: 1.7em;
+  font-family: var(--font-logo);
+  letter-spacing: 6px;
+  color: #101010;
+}
+
+.wrapper h2:hover {
+  cursor: pointer;
 }
 
 .spacing {
@@ -128,7 +147,6 @@ form {
 }
 
 /* página cadastre-se */
-
 .spacing-register {
   display: flex;
   justify-content: space-between;

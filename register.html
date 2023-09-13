@@ -13,16 +13,32 @@
   <body>
     <div class="wrapper">
       <form action="">
-        <h1>Cadastre-se</h1>
+        <div class="horizontal-align">
+          <h1>Cadastre-se</h1>
+          <h2>SUIC</h2>
+        </div>
 
         <div class="spacing">
           <div class="input-group">
-            <input type="text" name="user" id="user" placeholder="Usuário" />
+            <input
+              type="text"
+              name="user"
+              id="user"
+              placeholder="Usuário"
+              minlength="3"
+              required
+            />
             <i class="bx bxs-user"></i>
           </div>
 
           <div class="input-group">
-            <input type="email" name="email" id="email" placeholder="Email" />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              required
+            />
             <i class="bx bxs-envelope"></i>
           </div>
 
@@ -32,13 +48,15 @@
               name="password"
               id="password"
               placeholder="Senha"
+              minlength="8"
+              required
             />
             <i class="bx bxs-lock-alt"></i>
           </div>
         </div>
 
         <div class="auth-actions spacing-register">
-          <button type="submit">Cadastre-se</button>
+          <button type="submit">Criar conta</button>
           <p>Já possui cadastro? <a href="index.html">Faça login</a></p>
         </div>
       </form>
