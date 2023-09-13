@@ -51,7 +51,7 @@ form {
 }
 
 .wrapper h1 {
-  font-size: 2.6em;
+  font-size: 2.4em;
   letter-spacing: 1px;
 }
 
@@ -76,7 +76,6 @@ form {
   width: 100%;
   height: 50px;
   position: relative;
-  transition: 0.5s;
 }
 
 .input-group input {
@@ -150,4 +149,60 @@ form {
 .spacing-register {
   display: flex;
   justify-content: space-between;
+}
+
+/* responsivo login */
+
+@media only screen and (max-width: 1420px), (min-width: 769px) {
+  body {
+    background-size: cover;
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .wrapper {
+    width: 90%;
+  }
+
+  .wrapper h1 {
+    font-size: 2em;
+  }
+
+  .wrapper h2 {
+    font-size: 1.4em;
+  }
+
+  form {
+    gap: 90px;
+  }
+
+  .input-group {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-group input {
+    width: 100%;
+  }
+
+  .input-group i {
+    right: 20px;
+  }
+
+  .auth-actions {
+    display: flex;
+    justify-content: center;
+  }
+
+  .forgot-password {
+    position: relative;
+    text-align: center;
+    margin: -20px;
+  }
+
+  /* responsivo register*/
+  .login-prompt {
+    font-size: 0.9406249em;
+  }
 }
